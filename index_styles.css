@@ -244,3 +244,14 @@ footer {
   width: 100%;
   height: auto;
 }
+
+.page-header {
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
