@@ -261,6 +261,10 @@ footer {
   margin-bottom: 1rem;
 }
 
+.page-content h3 {
+  margin-top: 1.5rem
+}
+
 .page-content h4 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -269,12 +273,6 @@ footer {
 .indent {
   margin-left: 2rem;
 }
-
-/* .page-content-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.75rem 1.5rem 3rem;
-} */
 
 .page-content-wrapper{
   max-width: 1200px;
