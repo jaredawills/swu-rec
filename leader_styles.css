@@ -43,12 +43,29 @@ header {
   gap: 0.75rem;
 }
 
+.logo-index {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
 .logo-mark {
   width: 32px;
   height: 32px;
   border-radius: 999px;
   background: radial-gradient(circle at 30% 20%, #ffffff 0, #4fd1c5 35%, #1a202c 70%);
   box-shadow: 0 0 18px rgba(79, 209, 197, 0.7);
+}
+
+.logo-text-main {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+.logo-text-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
 
 nav a {

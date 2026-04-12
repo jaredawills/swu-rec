@@ -9,20 +9,22 @@
 
 <body>
 <header>
-  <div class="header-inner">
-    <div class="logo">
-      <div class="logo-mark"></div>
-      <div>
-        <div class="logo-text-main">SWU‑REC</div>
-        <div class="logo-text-sub">Star Wars: Unlimited Leader Recommendations</div>
-      </div>
+    <div class="header-inner">
+      <a href="../index.html" class="logo-index">
+      	<div class="logo" href="../index.html">
+          <div class="logo-mark"></div>
+          <div>
+            <div class="logo-text-main">SWU-REC</div>
+            <div class="logo-text-sub">Star Wars: Unlimited Deck Recommendations</div>
+          </div>
+        </div>
+	    </a>
+      <nav>
+        <a href="../index.html">Leaders</a>
+        <a href="../about.html">About</a>
+      </nav>
     </div>
-    <nav>
-      <a href="../index.html">Leaders</a>
-      <a href="../about.html">About</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
 <main>
 
@@ -58,15 +60,7 @@
         <label for="setFilter">Set:</label>
         <select id="setFilter">
           <option value="all">All Sets</option>
-          <option value="LAW">A Lawless Time</option>
-<option value="SEC">Secrets of Power</option>
-<option value="LOF">Legends of the Force</option>
-<option value="JTL">Jump to Lightspeed</option>
-<option value="TWI">Twilight of the Republic</option>
-<option value="SHD">Shadows of the Galaxy</option>
-<option value="SOR">Spark of Rebellion</option>
-<option value="TS26">2026 Twin Suns</option>
-<option value="IBH">Intro Battle: Hoth</option>
+          <option value="IBH">Intro Battle: Hoth</option>
         </select>
       </div>
 
@@ -133,81 +127,41 @@
     <div class="card-grid">
 
         <article class="card-tile"
-               data-type="Base"
-               data-aspect="Cunning"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":0.0,"1":4.17}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/2.png" alt="Echo Caverns">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Echo Caverns</div>
-          <div class="card-sub">
-            <span>Hoth</span>
-          </div>
-          <div class="card-sub">
-            <span>Base</span>
-            <span>IBH-002</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Cunning Heroism"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/3.png" alt="Chewbacca">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Chewbacca</div>
-          <div class="card-sub">
-            <span>Rrruuuurrr</span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-003</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Command Heroism"
-               data-set="IBH"
-               data-usage='{"3":4.17,"2":0.0,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/4.png" alt="Rogue Squadron Speeder">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Rogue Squadron Speeder</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-004</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
                data-type="Event"
                data-aspect="Cunning"
                data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
+               data-usage='{"3":0.0,"2":%copy2,"1":100.0}'>
         <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/5.png" alt="I'll Cover For You">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/52.png" alt="Watch This">
         </div>
         <div class="card-body">
-          <div class="card-name">I'll Cover For You</div>
+          <div class="card-name">Watch This</div>
           <div class="card-sub">
             <span></span>
           </div>
           <div class="card-sub">
             <span>Event</span>
-            <span>IBH-005</span>
+            <span>IBH-052</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
           </div>
           <div class="usage-stats"></div>
         </div>
@@ -216,367 +170,7 @@
                data-type="Unit"
                data-aspect="Cunning Heroism"
                data-set="IBH"
-               data-usage='{"3":4.17,"2":0.0,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/6.png" alt="Rebellion Y-Wing">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Rebellion Y-Wing</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-006</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Command Heroism"
-               data-set="IBH"
-               data-usage='{"3":4.17,"2":0.0,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/7.png" alt="Echo Coordinator">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Echo Coordinator</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-007</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Command Heroism"
-               data-set="IBH"
-               data-usage='{"3":4.17,"2":0.0,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/8.png" alt="Trench Defender">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Trench Defender</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-008</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Event"
-               data-aspect="Command"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/9.png" alt="I've Found Them">
-        </div>
-        <div class="card-body">
-          <div class="card-name">I've Found Them</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Event</span>
-            <span>IBH-009</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Cunning Heroism"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/10.png" alt="Han Solo">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Han Solo</div>
-          <div class="card-sub">
-            <span>Scruffy-Looking Nerf Herder</span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-010</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Cunning Heroism"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/11.png" alt="R2-D2">
-        </div>
-        <div class="card-body">
-          <div class="card-name">R2-D2</div>
-          <div class="card-sub">
-            <span>Known to Make Mistakes</span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-011</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Cunning"
-               data-set="IBH"
-               data-usage='{"3":4.17,"2":0.0,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/12.png" alt="Evacuation Escort">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Evacuation Escort</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-012</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Event"
-               data-aspect="Heroism"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":0.0,"1":4.17}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/13.png" alt="Recovery">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Recovery</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Event</span>
-            <span>IBH-013</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Command Heroism"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/14.png" alt="Bright Hope">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Bright Hope</div>
-          <div class="card-sub">
-            <span>Narrow Escape</span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-014</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Command"
-               data-set="IBH"
-               data-usage='{"3":4.17,"2":0.0,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/15.png" alt="Tauntaun Mount">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Tauntaun Mount</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-015</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Cunning"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/16.png" alt="Ion Cannon">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Ion Cannon</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-016</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Event"
-               data-aspect="Cunning"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/18.png" alt="Go for the Legs">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Go for the Legs</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Event</span>
-            <span>IBH-018</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Command Heroism"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/19.png" alt="C-3P0">
-        </div>
-        <div class="card-body">
-          <div class="card-name">C-3P0</div>
-          <div class="card-sub">
-            <span>Oh Dear, Oh Dear</span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-019</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Command Heroism"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":0.0,"1":4.17}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/20.png" alt="Luke Skywalker">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Luke Skywalker</div>
-          <div class="card-sub">
-            <span>Do You Read Me?</span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-020</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Event"
-               data-aspect="Cunning"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/21.png" alt="Improvised Detonation">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Improvised Detonation</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Event</span>
-            <span>IBH-021</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Command Heroism"
-               data-set="IBH"
-               data-usage='{"3":4.17,"2":0.0,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/22.png" alt="GR-75 Medium Transport">
-        </div>
-        <div class="card-body">
-          <div class="card-name">GR-75 Medium Transport</div>
-          <div class="card-sub">
-            <span></span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-022</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Command Heroism"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":4.17,"1":0.0}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/23.png" alt="General Rieekan">
-        </div>
-        <div class="card-body">
-          <div class="card-name">General Rieekan</div>
-          <div class="card-sub">
-            <span>Stalwart Tactician</span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-023</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Cunning Heroism"
-               data-set="IBH"
-               data-usage='{"3":0.0,"2":0.0,"1":4.17}'>
-        <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/31.png" alt="Millennium Falcon">
-        </div>
-        <div class="card-body">
-          <div class="card-name">Millennium Falcon</div>
-          <div class="card-sub">
-            <span>Bucket of Bolts</span>
-          </div>
-          <div class="card-sub">
-            <span>Unit</span>
-            <span>IBH-031</span>
-          </div>
-          <div class="usage-stats"></div>
-        </div>
-      </article>
-<article class="card-tile"
-               data-type="Unit"
-               data-aspect="Cunning Heroism"
-               data-set="IBH"
-               data-usage='{"3":4.17,"2":0.0,"1":0.0}'>
+               data-usage='{"3":100.0,"2":%copy2,"1":0.0}'>
         <div class="card-image-wrapper">
           <img src="https://cdn.swu-db.com/images/cards/IBH/37.png" alt="Hoth Trooper">
         </div>
@@ -593,21 +187,901 @@
         </div>
       </article>
 <article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning Heroism"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":100.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/31.png" alt="Millennium Falcon">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Millennium Falcon</div>
+          <div class="card-sub">
+            <span>Bucket of Bolts</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-031</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/23.png" alt="General Rieekan">
+        </div>
+        <div class="card-body">
+          <div class="card-name">General Rieekan</div>
+          <div class="card-sub">
+            <span>Stalwart Tactician</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-023</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="IBH"
+               data-usage='{"3":100.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/22.png" alt="GR-75 Medium Transport">
+        </div>
+        <div class="card-body">
+          <div class="card-name">GR-75 Medium Transport</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-022</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
                data-type="Event"
                data-aspect="Cunning"
                data-set="IBH"
-               data-usage='{"3":0.0,"2":0.0,"1":4.17}'>
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
         <div class="card-image-wrapper">
-          <img src="https://cdn.swu-db.com/images/cards/IBH/52.png" alt="Watch This">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/21.png" alt="Improvised Detonation">
         </div>
         <div class="card-body">
-          <div class="card-name">Watch This</div>
+          <div class="card-name">Improvised Detonation</div>
           <div class="card-sub">
             <span></span>
           </div>
           <div class="card-sub">
             <span>Event</span>
-            <span>IBH-052</span>
+            <span>IBH-021</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":100.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/20.png" alt="Luke Skywalker">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Luke Skywalker</div>
+          <div class="card-sub">
+            <span>Do You Read Me?</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-020</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/19.png" alt="C-3P0">
+        </div>
+        <div class="card-body">
+          <div class="card-name">C-3P0</div>
+          <div class="card-sub">
+            <span>Oh Dear, Oh Dear</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-019</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Cunning"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/18.png" alt="Go for the Legs">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Go for the Legs</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>IBH-018</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/16.png" alt="Ion Cannon">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Ion Cannon</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-016</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="IBH"
+               data-usage='{"3":100.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/15.png" alt="Tauntaun Mount">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Tauntaun Mount</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-015</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/14.png" alt="Bright Hope">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Bright Hope</div>
+          <div class="card-sub">
+            <span>Narrow Escape</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-014</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Heroism"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":100.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/13.png" alt="Recovery">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Recovery</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>IBH-013</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning"
+               data-set="IBH"
+               data-usage='{"3":100.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/12.png" alt="Evacuation Escort">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Evacuation Escort</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-012</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning Heroism"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/11.png" alt="R2-D2">
+        </div>
+        <div class="card-body">
+          <div class="card-name">R2-D2</div>
+          <div class="card-sub">
+            <span>Known to Make Mistakes</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-011</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning Heroism"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/10.png" alt="Han Solo">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Han Solo</div>
+          <div class="card-sub">
+            <span>Scruffy-Looking Nerf Herder</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-010</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Command"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/9.png" alt="I've Found Them">
+        </div>
+        <div class="card-body">
+          <div class="card-name">I've Found Them</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>IBH-009</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="IBH"
+               data-usage='{"3":100.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/8.png" alt="Trench Defender">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Trench Defender</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-008</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="IBH"
+               data-usage='{"3":100.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/7.png" alt="Echo Coordinator">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Echo Coordinator</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-007</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning Heroism"
+               data-set="IBH"
+               data-usage='{"3":100.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/6.png" alt="Rebellion Y-Wing">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Rebellion Y-Wing</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-006</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Cunning"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/5.png" alt="I'll Cover For You">
+        </div>
+        <div class="card-body">
+          <div class="card-name">I'll Cover For You</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>IBH-005</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="IBH"
+               data-usage='{"3":100.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/4.png" alt="Rogue Squadron Speeder">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Rogue Squadron Speeder</div>
+          <div class="card-sub">
+            <span></span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-004</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning Heroism"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/3.png" alt="Chewbacca">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Chewbacca</div>
+          <div class="card-sub">
+            <span>Rrruuuurrr</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-003</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Base"
+               data-aspect="Cunning"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":%copy2,"1":100.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/2.png" alt="Echo Caverns">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Echo Caverns</div>
+          <div class="card-sub">
+            <span>Hoth</span>
+          </div>
+          <div class="card-sub">
+            <span>Base</span>
+            <span>IBH-002</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="%card_type"
+               data-aspect="%aspects"
+               data-set="%set_code"
+               data-usage='{"3":%copy3,"2":%copy2,"1":%copy1}'>
+        <div class="card-image-wrapper">
+          <img src="%front_art" alt="%title">
+        </div>
+        <div class="card-body">
+          <div class="card-name">%title</div>
+          <div class="card-sub">
+            <span>%subtitle</span>
+          </div>
+          <div class="card-sub">
+            <span>%card_type</span>
+            <span>%card_num</span>
           </div>
           <div class="usage-stats"></div>
         </div>
