@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SWU-Rec - Omega</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../leader_styles.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5EY4762Y17"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5EY4762Y17');
+</script>
+<body>
+<header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo-index">
+      	<div class="logo" href="../index.html">
+          <div class="logo-mark"></div>
+          <div>
+            <div class="logo-text-main">SWU-REC</div>
+            <div class="logo-text-sub">Star Wars: Unlimited Deck Recommendations</div>
+          </div>
+        </div>
+	    </a>
+      <nav>
+        <a href="../index.html">Leaders</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+
+  <nav class="breadcrumbs">
+    <a href="../index.html">Leaders</a> &raquo;
+    <a href="../index.html?set=HMW">Homeworlds</a> &raquo;
+    <span>Omega</span>
+  </nav>
+
+  <!-- LEADER HEADER -->
+  <section class="leader-header">
+    <div class="leader-title-block">
+      <h1>Omega</h1>
+      <div class="leader-subtitle">Close Your Eyes and Focus · Homeworlds (HMW-006)</div>
+
+      <div class="leader-tags">
+        <span class="leader-tag-pill">Vigilance Heroism</span>
+        <span class="leader-tag-pill">Clone</span>
+      </div>
+
+      <p class="leader-description">
+        Action [C=1, Exhaust]: Attack with a Heroic unit. It gains Grit for this attack. (It gets +1/+0 for each damage on it.)
+        <br>-<br>
+        Other friendly Heroic units gain Grit.
+        <br><br><br>
+        2 decks scanned
+        <br><br><br>
+      </p>
+      
+      <!-- SET FILTER -->
+      <div class="set-filter">
+        <h2>Filter by Set</h2>
+        <label for="setFilter">Set:</label>
+        <select id="setFilter">
+          <option value="all">All Sets</option>
+          <option value="HMW">Homeworlds</option>
+<option value="ASH">Ashes of the Empire</option>
+<option value="LAW">A Lawless Time</option>
+<option value="SEC">Secrets of Power</option>
+<option value="LOF">Legends of the Force</option>
+<option value="JTL">Jump to Lightspeed</option>
+        </select>
+      </div>
+
+      <!-- CARD TYPE FILTER -->
+      <section class="type-filter">
+        <h2>Filter by Card Type</h2>
+        <div class="filter-links-grid">
+          <button class="filter-link type-btn active" data-type="all"><span>All</span> Types</button>
+          <button class="filter-link type-btn" data-type="Base"><span>Bases</span></button>
+          <button class="filter-link type-btn" data-type="Unit"><span>Units</span></button>
+          <button class="filter-link type-btn" data-type="Event"><span>Events</span></button>
+          <button class="filter-link type-btn" data-type="Upgrade"><span>Upgrades</span></button>
+        </div>
+      </section>
+
+      <!-- ASPECT FILTER -->
+      <section class="aspect-filter">
+        <h2>Filter by Aspect</h2>
+        <div class="filter-links-grid">
+          <button class="filter-link aspect-btn active" data-aspect="all"><span>All</span> Aspects</button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Vigilance"><span>
+            <img src="../images/SWH_Aspects_Vigilance.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Command"><span>
+            <img src="../images/SWH_Aspects_Command.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Aggression"><span>
+            <img src="../images/SWH_Aspects_Aggression.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Cunning"><span>
+            <img src="../images/SWH_Aspects_Cunning.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Villainy"><span>
+            <img src="../images/SWH_Aspects_Villainy.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Heroism"><span>
+            <img src="../images/SWH_Aspects_Heroism.png">
+          </span></button>
+        </div>
+      </section>
+    </div>
+
+    <aside class="right-header">
+      <div class="leader-images-panel">
+        <h2>Leader Card</h2>
+        <div class="leader-flip-wrapper">
+          <img id="leaderCardImage"
+              src="https://cdn.swu-db.com/images/cards/HMW/006.png"
+              data-front="https://cdn.swu-db.com/images/cards/HMW/006.png"
+              data-back="https://cdn.swu-db.com/images/cards/HMW/006-b.png"
+              alt="Leader card"
+              class="leader-card-img">
+
+          <button id="flipLeaderBtn" class="flip-btn">Flip Leader</button>
+        </div>
+      </div>
+      <div class="copy-btns">
+        <p>Use the button below to copy a link to this page that keeps your filters!</p>
+        <!-- <button id="copyBtn" class="copy-btn" data-copy="Your text to copy here">
+          Copy
+        </button> -->
+        <button id="copyShareLinkBtn" class="copy-btn">
+          Copy Share Link
+        </button>
+        <div id="copyToast" class="copy-toast">Copied!</div>
+      </div>
+    </aside>
+
+  </section>
+
+  
+
+
+  <!-- CARD GRID -->
+  <section>
+    <h2>Card Pool</h2>
+    <div class="card-grid">
+
+        <article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="SEC"
+               data-usage='{"3":50.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/179.png" alt="Aggressive Negotiations">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Aggressive Negotiations</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>SEC-179</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Aggression"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":100.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/176.png" alt="Sudden Ferocity">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Sudden Ferocity</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>SEC-176</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":100.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/048.png" alt="Captain Rex">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Captain Rex</div>
+          <div class="card-sub">
+            <span>Into the Firefight</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-048</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="LOF"
+               data-usage='{"3":100.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LOF/045.png" alt="Yaddle">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Yaddle</div>
+          <div class="card-sub">
+            <span>A Chance to Make Things Right</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LOF-045</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="LAW"
+               data-usage='{"3":0.0,"2":100.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/108.png" alt="Lando Calrissian">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Lando Calrissian</div>
+          <div class="card-sub">
+            <span>Eyes Open</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-108</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="LAW"
+               data-usage='{"3":100.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/104.png" alt="Bodhi Rook">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Bodhi Rook</div>
+          <div class="card-sub">
+            <span>Creating a Diversion</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-104</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="JTL"
+               data-usage='{"3":50.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/051.png" alt="Red Squadron X-Wing">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Red Squadron X-Wing</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-051</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="HMW"
+               data-usage='{"3":50.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/079.png" alt="Radiant VII">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Radiant VII</div>
+          <div class="card-sub">
+            <span>Negotiating for Naboo</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-079</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Base"
+               data-aspect="Aggression"
+               data-set="nan"
+               data-usage='{"3":0.0,"2":0.0,"1":100.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SOR/026.png" alt="Aggression Generic Base">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Aggression Generic Base</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Base</span>
+            <span>Agg30</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="ASH"
+               data-usage='{"3":100.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/158.png" alt="Han Solo">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Han Solo</div>
+          <div class="card-sub">
+            <span>It'll Work</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-158</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="ASH"
+               data-usage='{"3":50.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/153.png" alt="Green Leader">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Green Leader</div>
+          <div class="card-sub">
+            <span>Crynyd's Sacrifice</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-153</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="ASH"
+               data-usage='{"3":50.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/059.png" alt="Leia Organa">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Leia Organa</div>
+          <div class="card-sub">
+            <span>Vigilant for Danger</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-059</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="ASH"
+               data-usage='{"3":50.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/056.png" alt="Huyang">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Huyang</div>
+          <div class="card-sub">
+            <span>Your Aptitude Falls Short</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-056</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Heroism"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/256.png" alt="Moral Authority">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Moral Authority</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>SEC-256</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/148.png" alt="Karis Nemik">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Karis Nemik</div>
+          <div class="card-sub">
+            <span>Freedom is a Pure Idea</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-148</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Vigilance"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/069.png" alt="Nimble Prowess">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Nimble Prowess</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>SEC-069</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/046.png" alt="Galen Erso">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Galen Erso</div>
+          <div class="card-sub">
+            <span>You'll Never Win</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-046</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="LOF"
+               data-usage='{"3":0.0,"2":0.0,"1":50.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LOF/147.png" alt="Kit Fisto's Aethersprite">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Kit Fisto's Aethersprite</div>
+          <div class="card-sub">
+            <span>Good Hunting</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LOF-147</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="LAW"
+               data-usage='{"3":50.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/105.png" alt="Cinta Kaz">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Cinta Kaz</div>
+          <div class="card-sub">
+            <span>Stone Cold and Fearless</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-105</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Aggression Heroism"
+               data-set="LAW"
+               data-usage='{"3":0.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/045.png" alt="Zeb Orellios">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Zeb Orellios</div>
+          <div class="card-sub">
+            <span>Spectre Four</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-045</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Heroism"
+               data-set="JTL"
+               data-usage='{"3":50.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/248.png" alt="Dilapidated Ski Speeder">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Dilapidated Ski Speeder</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-248</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="JTL"
+               data-usage='{"3":50.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/173.png" alt="Fight Fire With Fire">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Fight Fire With Fire</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>JTL-173</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="JTL"
+               data-usage='{"3":50.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/151.png" alt="Red Five">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Red Five</div>
+          <div class="card-sub">
+            <span>Running the Trench</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-151</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="JTL"
+               data-usage='{"3":50.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/147.png" alt="Black One">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Black One</div>
+          <div class="card-sub">
+            <span>Straight At Them</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-147</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="JTL"
+               data-usage='{"3":50.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/046.png" alt="Paige Tico">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Paige Tico</div>
+          <div class="card-sub">
+            <span>Dropping the Hammer</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-046</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Heroism"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/263.png" alt="Wrecker">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Wrecker</div>
+          <div class="card-sub">
+            <span>Wrecking the Empire</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-263</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/169.png" alt="Crosshair">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Crosshair</div>
+          <div class="card-sub">
+            <span>I've Changed</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-169</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/080.png" alt="Fambaa Shield Team">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Fambaa Shield Team</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-080</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Heroism"
+               data-set="ASH"
+               data-usage='{"3":0.0,"2":0.0,"1":50.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/255.png" alt="Anakin Skywalker">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Anakin Skywalker</div>
+          <div class="card-sub">
+            <span>You Were Right About Me</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-255</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Heroism"
+               data-set="ASH"
+               data-usage='{"3":0.0,"2":50.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/062.png" alt="The Mandalorian">
+        </div>
+        <div class="card-body">
+          <div class="card-name">The Mandalorian</div>
+          <div class="card-sub">
+            <span>Devoted Rescuer</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-062</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Vigilance Aggression Heroism"
+               data-set="ASH"
+               data-usage='{"3":50.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/031.png" alt="Hera Syndulla">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Hera Syndulla</div>
+          <div class="card-sub">
+            <span>Renegade General</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-031</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div id="cardZoomPopup"></div>
+
+</main>
+
+<footer>
+  SWU‑Rec – unofficial Star Wars: Unlimited reference. Card images and game content © their owners.<br>
+  Last Data Refresh: 2026-09-11 22:29:55
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* ============================================================
+     FILTER STATE
+     ============================================================ */
+  let activeTypes   = new Set(["all"]);
+  let activeAspects = new Set(["all"]);
+  let activeSet     = "all";
+
+  /* ============================================================
+     ELEMENTS
+     ============================================================ */
+  const typeButtons   = document.querySelectorAll('.type-btn');
+  const aspectButtons = document.querySelectorAll('.aspect-btn');
+  const setFilter     = document.getElementById('setFilter');
+  const cards         = document.querySelectorAll('.card-tile');
+
+  /* ============================================================
+     USAGE STATS
+     ============================================================ */
+  function renderUsageStats() {
+    cards.forEach(tile => {
+      const usageContainer = tile.querySelector('.usage-stats');
+      const usageData = JSON.parse(tile.dataset.usage || "{}");
+      usageContainer.innerHTML = "";
+
+      const rows = [
+        { copies: 3, label: "3 copies" },
+        { copies: 2, label: "2 copies" },
+        { copies: 1, label: "1 copy" }
+      ];
+
+      rows.forEach(row => {
+        const pct = usageData[row.copies];
+        if (!pct || pct <= 0) return;
+        const div = document.createElement('div');
+        div.className = "usage-row";
+        div.textContent = `${row.label}: ${pct}% of decks`;
+        usageContainer.appendChild(div);
+      });
+    });
+  }
+
+  /* ============================================================
+     UNIFIED FILTER ENGINE
+     ============================================================ */
+  function applyFilters() {
+    cards.forEach(card => {
+      const cardTypes   = (card.dataset.type   || "").split(" ");
+      const cardAspects = (card.dataset.aspect || "").split(" ");
+      const cardSet     = card.dataset.set || "all";
+
+      let visible = true;
+
+      // TYPE FILTER
+      if (!activeTypes.has("all")) {
+        const matchesType = cardTypes.some(t => activeTypes.has(t));
+        if (!matchesType) visible = false;
+      }
+
+      // ASPECT FILTER
+      if (!activeAspects.has("all")) {
+        const matchesAspect = cardAspects.some(a => activeAspects.has(a));
+        if (!matchesAspect) visible = false;
+      }
+
+      // SET FILTER
+      if (activeSet !== "all" && cardSet !== activeSet) {
+        visible = false;
+      }
+
+      card.style.display = visible ? "" : "none";
+    });
+  }
+
+  /* ============================================================
+     APPLY FILTERS FROM URL (NEW)
+     ============================================================ */
+  function applyFiltersFromURL() {
+    const params = new URLSearchParams(window.location.search);
+
+    /* SET */
+    const setParam = params.get("set");
+    if (setParam) {
+      activeSet = setParam;
+      if (setFilter) setFilter.value = setParam;
+    }
+
+    /* TYPES */
+    const typesParam = params.get("types");
+    if (typesParam) {
+      activeTypes = new Set(typesParam.split(","));
+      activeTypes.delete("all");
+
+      typeButtons.forEach(btn => {
+        const t = btn.dataset.type;
+        btn.classList.toggle("active", activeTypes.has(t));
+      });
+    }
+
+    /* ASPECTS */
+    const aspectsParam = params.get("aspects");
+    if (aspectsParam) {
+      activeAspects = new Set(aspectsParam.split(","));
+      activeAspects.delete("all");
+
+      aspectButtons.forEach(btn => {
+        const a = btn.dataset.aspect;
+        btn.classList.toggle("active", activeAspects.has(a));
+      });
+    }
+  }
+
+  /* ============================================================
+     TYPE FILTER BUTTONS
+     ============================================================ */
+  typeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const type = btn.dataset.type;
+
+      if (type === "all") {
+        activeTypes = new Set(["all"]);
+        typeButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+        return;
+      }
+
+      activeTypes.delete("all");
+      document.querySelector('.type-btn[data-type="all"]')?.classList.remove('active');
+
+      if (activeTypes.has(type)) {
+        activeTypes.delete(type);
+        btn.classList.remove('active');
+      } else {
+        activeTypes.add(type);
+        btn.classList.add('active');
+      }
+
+      if (activeTypes.size === 0) {
+        activeTypes.add("all");
+        document.querySelector('.type-btn[data-type="all"]')?.classList.add('active');
+      }
+
+      applyFilters();
+    });
+  });
+
+  /* ============================================================
+     ASPECT FILTER BUTTONS
+     ============================================================ */
+  aspectButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const aspect = btn.dataset.aspect;
+
+      if (aspect === "all") {
+        activeAspects = new Set(["all"]);
+        aspectButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+        return;
+      }
+
+      activeAspects.delete("all");
+      document.querySelector('.aspect-btn[data-aspect="all"]')?.classList.remove('active');
+
+      if (activeAspects.has(aspect)) {
+        activeAspects.delete(aspect);
+        btn.classList.remove('active');
+      } else {
+        activeAspects.add(aspect);
+        btn.classList.add('active');
+      }
+
+      if (activeAspects.size === 0) {
+        activeAspects.add("all");
+        document.querySelector('.aspect-btn[data-aspect="all"]')?.classList.add('active');
+      }
+
+      applyFilters();
+    });
+  });
+
+  /* ============================================================
+     SET FILTER
+     ============================================================ */
+  if (setFilter) {
+    setFilter.addEventListener('change', () => {
+      activeSet = setFilter.value;
+      applyFilters();
+    });
+  }
+
+  /* ============================================================
+     LEADER CARD FLIP
+     ============================================================ */
+  const leaderImg = document.getElementById("leaderCardImage");
+  const flipBtn   = document.getElementById("flipLeaderBtn");
+
+  if (leaderImg && flipBtn) {
+    let showingFront = true;
+
+    flipBtn.addEventListener("click", () => {
+      leaderImg.style.opacity = 0;
+
+      setTimeout(() => {
+        showingFront = !showingFront;
+        leaderImg.src = showingFront ? leaderImg.dataset.front : leaderImg.dataset.back;
+        leaderImg.style.opacity = 1;
+      }, 200);
+    });
+  }
+
+  /* ============================================================
+     HOVER ZOOM POPUP
+     ============================================================ */
+  const zoomPopup = document.getElementById("cardZoomPopup");
+
+  if (zoomPopup) {
+    document.querySelectorAll(".card-image-wrapper img").forEach(img => {
+      img.addEventListener("mouseenter", () => {
+        const zoomImg = document.createElement("img");
+        zoomImg.src = img.src;
+        zoomPopup.innerHTML = "";
+        zoomPopup.appendChild(zoomImg);
+
+        zoomPopup.style.width = img.clientWidth * 2.5 + "px";
+        zoomPopup.style.display = "block";
+      });
+
+      img.addEventListener("mousemove", (e) => {
+        const offset = 20;
+        zoomPopup.style.left = e.clientX + offset + "px";
+        zoomPopup.style.top  = e.clientY + offset - 2.5 * img.clientHeight / 2 + "px";
+      });
+
+      img.addEventListener("mouseleave", () => {
+        zoomPopup.style.display = "none";
+      });
+    });
+  }
+
+  /* ============================================================
+     SHARE LINK BUTTON (GUARDED)
+     ============================================================ */
+  const copyShareLinkBtn = document.getElementById("copyShareLinkBtn");
+  const copyToast        = document.getElementById("copyToast");
+
+  if (copyShareLinkBtn && copyToast) {
+    copyShareLinkBtn.addEventListener("click", () => {
+      const params = new URLSearchParams();
+
+      if (activeSet !== "all") params.set("set", activeSet);
+      if (!activeTypes.has("all"))   params.set("types",   [...activeTypes].join(","));
+      if (!activeAspects.has("all")) params.set("aspects", [...activeAspects].join(","));
+
+      const baseUrl  = window.location.origin + "/HMW/HMW_006.html";
+      const shareUrl = params.toString()
+        ? `${baseUrl}?${params.toString()}`
+        : baseUrl;
+
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        copyToast.classList.add("show");
+        setTimeout(() => copyToast.classList.remove("show"), 1500);
+      });
+    });
+  }
+
+  /* ============================================================
+     INITIALIZE (URL → STATE → FILTERS)
+     ============================================================ */
+  applyFiltersFromURL();  // NEW
+  renderUsageStats();
+  applyFilters();
+});
+</script>
+</body>
+</html>

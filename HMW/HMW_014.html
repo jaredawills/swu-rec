@@ -1,0 +1,2949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SWU-Rec - Wicket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../leader_styles.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5EY4762Y17"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5EY4762Y17');
+</script>
+<body>
+<header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo-index">
+      	<div class="logo" href="../index.html">
+          <div class="logo-mark"></div>
+          <div>
+            <div class="logo-text-main">SWU-REC</div>
+            <div class="logo-text-sub">Star Wars: Unlimited Deck Recommendations</div>
+          </div>
+        </div>
+	    </a>
+      <nav>
+        <a href="../index.html">Leaders</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+
+  <nav class="breadcrumbs">
+    <a href="../index.html">Leaders</a> &raquo;
+    <a href="../index.html?set=HMW">Homeworlds</a> &raquo;
+    <span>Wicket</span>
+  </nav>
+
+  <!-- LEADER HEADER -->
+  <section class="leader-header">
+    <div class="leader-title-block">
+      <h1>Wicket</h1>
+      <div class="leader-subtitle">Few Greater Battles to Fight · Homeworlds (HMW-014)</div>
+
+      <div class="leader-tags">
+        <span class="leader-tag-pill">Aggression Heroism</span>
+        <span class="leader-tag-pill">Ewok</span>
+      </div>
+
+      <p class="leader-description">
+        When a friendly unit attacks a unit that costs more than it: You may exhaust this leader. If you do, draw a card.
+        <br>-<br>
+        On Attack: If you control a unit that costs 3 or less, draw a card.
+        <br><br><br>
+        40 decks scanned
+        <br><br><br>
+      </p>
+      
+      <!-- SET FILTER -->
+      <div class="set-filter">
+        <h2>Filter by Set</h2>
+        <label for="setFilter">Set:</label>
+        <select id="setFilter">
+          <option value="all">All Sets</option>
+          <option value="HMW">Homeworlds</option>
+<option value="ASH">Ashes of the Empire</option>
+<option value="LAW">A Lawless Time</option>
+<option value="SEC">Secrets of Power</option>
+<option value="LOF">Legends of the Force</option>
+<option value="JTL">Jump to Lightspeed</option>
+<option value="TWI">Twilight of the Republic</option>
+<option value="SOR">Spark of Rebellion</option>
+<option value="IBH">Intro Battle: Hoth</option>
+        </select>
+      </div>
+
+      <!-- CARD TYPE FILTER -->
+      <section class="type-filter">
+        <h2>Filter by Card Type</h2>
+        <div class="filter-links-grid">
+          <button class="filter-link type-btn active" data-type="all"><span>All</span> Types</button>
+          <button class="filter-link type-btn" data-type="Base"><span>Bases</span></button>
+          <button class="filter-link type-btn" data-type="Unit"><span>Units</span></button>
+          <button class="filter-link type-btn" data-type="Event"><span>Events</span></button>
+          <button class="filter-link type-btn" data-type="Upgrade"><span>Upgrades</span></button>
+        </div>
+      </section>
+
+      <!-- ASPECT FILTER -->
+      <section class="aspect-filter">
+        <h2>Filter by Aspect</h2>
+        <div class="filter-links-grid">
+          <button class="filter-link aspect-btn active" data-aspect="all"><span>All</span> Aspects</button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Vigilance"><span>
+            <img src="../images/SWH_Aspects_Vigilance.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Command"><span>
+            <img src="../images/SWH_Aspects_Command.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Aggression"><span>
+            <img src="../images/SWH_Aspects_Aggression.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Cunning"><span>
+            <img src="../images/SWH_Aspects_Cunning.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Villainy"><span>
+            <img src="../images/SWH_Aspects_Villainy.png">
+          </span></button>
+          <button class="filter-link aspect-btn aspect" data-aspect="Heroism"><span>
+            <img src="../images/SWH_Aspects_Heroism.png">
+          </span></button>
+        </div>
+      </section>
+    </div>
+
+    <aside class="right-header">
+      <div class="leader-images-panel">
+        <h2>Leader Card</h2>
+        <div class="leader-flip-wrapper">
+          <img id="leaderCardImage"
+              src="https://cdn.swu-db.com/images/cards/HMW/014.png"
+              data-front="https://cdn.swu-db.com/images/cards/HMW/014.png"
+              data-back="https://cdn.swu-db.com/images/cards/HMW/014-b.png"
+              alt="Leader card"
+              class="leader-card-img">
+
+          <button id="flipLeaderBtn" class="flip-btn">Flip Leader</button>
+        </div>
+      </div>
+      <div class="copy-btns">
+        <p>Use the button below to copy a link to this page that keeps your filters!</p>
+        <!-- <button id="copyBtn" class="copy-btn" data-copy="Your text to copy here">
+          Copy
+        </button> -->
+        <button id="copyShareLinkBtn" class="copy-btn">
+          Copy Share Link
+        </button>
+        <div id="copyToast" class="copy-toast">Copied!</div>
+      </div>
+    </aside>
+
+  </section>
+
+  
+
+
+  <!-- CARD GRID -->
+  <section>
+    <h2>Card Pool</h2>
+    <div class="card-grid">
+
+        <article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="HMW"
+               data-usage='{"3":95.0,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/162.png" alt="Teebo">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Teebo</div>
+          <div class="card-sub">
+            <span>Striped Hunter</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-162</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Aggression Heroism"
+               data-set="ASH"
+               data-usage='{"3":70.0,"2":17.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/034.png" alt="Wicket">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Wicket</div>
+          <div class="card-sub">
+            <span>Yub Nub!</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-034</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="HMW"
+               data-usage='{"3":85.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/164.png" alt="Chief Chirpa">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Chief Chirpa</div>
+          <div class="card-sub">
+            <span>Defiant Elder</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-164</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Base"
+               data-aspect="Command"
+               data-set="nan"
+               data-usage='{"3":0.0,"2":0.0,"1":85.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SOR/024.png" alt="Command Generic Base">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Command Generic Base</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Base</span>
+            <span>Com30</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression"
+               data-set="HMW"
+               data-usage='{"3":82.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/177.png" alt="Adamant Ewoks">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Adamant Ewoks</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-177</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Aggression"
+               data-set="HMW"
+               data-usage='{"3":67.5,"2":10.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/045.png" alt="Logray">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Logray</div>
+          <div class="card-sub">
+            <span>Bright Tree Shaman</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-045</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="HMW"
+               data-usage='{"3":65.0,"2":10.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/136.png" alt="Lifetree Caravan">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Lifetree Caravan</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-136</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Heroism"
+               data-set="HMW"
+               data-usage='{"3":52.5,"2":20.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/257.png" alt="Ewok Archers">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Ewok Archers</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-257</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="HMW"
+               data-usage='{"3":62.5,"2":10.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/193.png" alt="Nightfall">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Nightfall</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>HMW-193</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="HMW"
+               data-usage='{"3":65.0,"2":7.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/115.png" alt="Leia Organa">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Leia Organa</div>
+          <div class="card-sub">
+            <span>These are My Friends</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-115</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression"
+               data-set="HMW"
+               data-usage='{"3":52.5,"2":12.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/176.png" alt="Village Troublemaker">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Village Troublemaker</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-176</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="HMW"
+               data-usage='{"3":57.5,"2":5.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/163.png" alt="Champions of Endor">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Champions of Endor</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-163</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="SEC"
+               data-usage='{"3":37.5,"2":20.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/179.png" alt="Aggressive Negotiations">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Aggressive Negotiations</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>SEC-179</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="ASH"
+               data-usage='{"3":40.0,"2":12.5,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/129.png" alt="Defenders of the Forest">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Defenders of the Forest</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-129</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="LOF"
+               data-usage='{"3":40.0,"2":10.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LOF/107.png" alt="Village Tender">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Village Tender</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LOF-107</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Heroism"
+               data-set="HMW"
+               data-usage='{"3":40.0,"2":10.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/255.png" alt="C-3P0">
+        </div>
+        <div class="card-body">
+          <div class="card-name">C-3P0</div>
+          <div class="card-sub">
+            <span>Captivating Storyteller</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-255</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="HMW"
+               data-usage='{"3":45.0,"2":2.5,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/116.png" alt="Ewok Brigade">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Ewok Brigade</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-116</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression"
+               data-set="ASH"
+               data-usage='{"3":30.0,"2":7.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/166.png" alt="Ewok Warrior">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Ewok Warrior</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-166</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="LAW"
+               data-usage='{"3":22.5,"2":12.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/202.png" alt="Commence the Festivities">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Commence the Festivities</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>LAW-202</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Heroism"
+               data-set="ASH"
+               data-usage='{"3":32.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/248.png" alt="Neel">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Neel</div>
+          <div class="card-sub">
+            <span>The Cutest Boy</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-248</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="JTL"
+               data-usage='{"3":17.5,"2":12.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/096.png" alt="Blue Leader">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Blue Leader</div>
+          <div class="card-sub">
+            <span>Scarif Air Support</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-096</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression Heroism"
+               data-set="ASH"
+               data-usage='{"3":17.5,"2":12.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/163.png" alt="Reckless Sacrifice">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Reckless Sacrifice</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>ASH-163</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Command"
+               data-set="ASH"
+               data-usage='{"3":12.5,"2":10.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/135.png" alt="The Darksaber">
+        </div>
+        <div class="card-body">
+          <div class="card-name">The Darksaber</div>
+          <div class="card-sub">
+            <span>Icon of Leadership</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>ASH-135</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="ASH"
+               data-usage='{"3":12.5,"2":7.5,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/109.png" alt="T-6 Shuttle 1974">
+        </div>
+        <div class="card-body">
+          <div class="card-name">T-6 Shuttle 1974</div>
+          <div class="card-sub">
+            <span>With a Mentor's Dedication</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-109</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression"
+               data-set="HMW"
+               data-usage='{"3":7.5,"2":5.0,"1":7.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/188.png" alt="Giant Gorax">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Giant Gorax</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-188</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Aggression Heroism"
+               data-set="HMW"
+               data-usage='{"3":17.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/171.png" alt="Trap Field">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Trap Field</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>HMW-171</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="ASH"
+               data-usage='{"3":17.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/153.png" alt="Green Leader">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Green Leader</div>
+          <div class="card-sub">
+            <span>Crynyd's Sacrifice</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-153</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="SEC"
+               data-usage='{"3":15.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/148.png" alt="Karis Nemik">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Karis Nemik</div>
+          <div class="card-sub">
+            <span>Freedom is a Pure Idea</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-148</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Aggression"
+               data-set="SEC"
+               data-usage='{"3":7.5,"2":7.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/176.png" alt="Sudden Ferocity">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Sudden Ferocity</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>SEC-176</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Heroism"
+               data-set="HMW"
+               data-usage='{"3":7.5,"2":7.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/254.png" alt="Captain Tarpals">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Captain Tarpals</div>
+          <div class="card-sub">
+            <span>Grand Army Captain</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-254</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Command"
+               data-set="HMW"
+               data-usage='{"3":12.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/147.png" alt="Beast Lair">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Beast Lair</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>HMW-147</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="ASH"
+               data-usage='{"3":12.5,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/116.png" alt="Ant Droid">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Ant Droid</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-116</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Aggression"
+               data-set="ASH"
+               data-usage='{"3":0.0,"2":10.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/183.png" alt="Whistling Birds">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Whistling Birds</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>ASH-183</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression Heroism"
+               data-set="ASH"
+               data-usage='{"3":7.5,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/162.png" alt="Rash Action">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Rash Action</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>ASH-162</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="ASH"
+               data-usage='{"3":10.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/112.png" alt="Luke Skywalker">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Luke Skywalker</div>
+          <div class="card-sub">
+            <span>Answering the Call</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-112</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Heroism"
+               data-set="SEC"
+               data-usage='{"3":7.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/258.png" alt="Grassroots Resistance">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Grassroots Resistance</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>SEC-258</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="SEC"
+               data-usage='{"3":5.0,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/111.png" alt="Jar Jar Binks">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Jar Jar Binks</div>
+          <div class="card-sub">
+            <span>Mesa Propose</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-111</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="SEC"
+               data-usage='{"3":5.0,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/101.png" alt="Queen Amidala">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Queen Amidala</div>
+          <div class="card-sub">
+            <span>Championing Her People</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-101</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="LAW"
+               data-usage='{"3":7.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/144.png" alt="Phantom">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Phantom</div>
+          <div class="card-sub">
+            <span>Spectre Shuttle</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-144</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Heroism"
+               data-set="JTL"
+               data-usage='{"3":7.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/250.png" alt="Sabine's Masterpiece">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Sabine's Masterpiece</div>
+          <div class="card-sub">
+            <span>Crazy Colorful</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-250</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression"
+               data-set="HMW"
+               data-usage='{"3":10.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/175.png" alt="Fennec Shand">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Fennec Shand</div>
+          <div class="card-sub">
+            <span>A Ship for a Life</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-175</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="ASH"
+               data-usage='{"3":10.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/158.png" alt="Han Solo">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Han Solo</div>
+          <div class="card-sub">
+            <span>It'll Work</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-158</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="SEC"
+               data-usage='{"3":5.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/151.png" alt="Kazuda Xiono">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Kazuda Xiono</div>
+          <div class="card-sub">
+            <span>I'm Not A Spy</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-151</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="SEC"
+               data-usage='{"3":5.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/098.png" alt="Captain Typho">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Captain Typho</div>
+          <div class="card-sub">
+            <span>All Necessary Precautions</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-098</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="LAW"
+               data-usage='{"3":2.5,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/208.png" alt="Collateral Damage">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Collateral Damage</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>LAW-208</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="LAW"
+               data-usage='{"3":7.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/152.png" alt="C-3P0">
+        </div>
+        <div class="card-body">
+          <div class="card-name">C-3P0</div>
+          <div class="card-sub">
+            <span>Translation Protocol</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-152</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Aggression Heroism"
+               data-set="LAW"
+               data-usage='{"3":5.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/056.png" alt="Cassian Andor">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Cassian Andor</div>
+          <div class="card-sub">
+            <span>Everything for the Rebellion</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-056</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="JTL"
+               data-usage='{"3":7.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/149.png" alt="Red Squadron Y-Wing">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Red Squadron Y-Wing</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-149</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning Heroism"
+               data-set="HMW"
+               data-usage='{"3":7.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/208.png" alt="Luke Skywalker">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Luke Skywalker</div>
+          <div class="card-sub">
+            <span>Dreaming Farmboy</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-208</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="HMW"
+               data-usage='{"3":5.0,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/170.png" alt="Han Solo">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Han Solo</div>
+          <div class="card-sub">
+            <span>My Team's Ready</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-170</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="HMW"
+               data-usage='{"3":5.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/168.png" alt="Ezra Bridger">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Ezra Bridger</div>
+          <div class="card-sub">
+            <span>What are you Afraid Of?</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-168</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Base"
+               data-aspect="Cunning"
+               data-set="nan"
+               data-usage='{"3":0.0,"2":0.0,"1":7.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SOR/030.png" alt="Cunning Generic Base">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Cunning Generic Base</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Base</span>
+            <span>Cun30</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Heroism"
+               data-set="SEC"
+               data-usage='{"3":2.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/256.png" alt="Moral Authority">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Moral Authority</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>SEC-256</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Cunning"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/229.png" alt="Catch Unawares">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Catch Unawares</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>SEC-229</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/163.png" alt="Outer Rim Constable">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Outer Rim Constable</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-163</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression Heroism"
+               data-set="SEC"
+               data-usage='{"3":2.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/158.png" alt="Oppression Breeds Rebellion">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Oppression Breeds Rebellion</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>SEC-158</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Command"
+               data-set="SEC"
+               data-usage='{"3":2.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/123.png" alt="Unveiled Might">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Unveiled Might</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>SEC-123</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Command Heroism"
+               data-set="SEC"
+               data-usage='{"3":2.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/104.png" alt="Figure of Unity">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Figure of Unity</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>SEC-104</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="SEC"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/094.png" alt="Mina Bonteri">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Mina Bonteri</div>
+          <div class="card-sub">
+            <span>Stop This War</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-094</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="LAW"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/205.png" alt="Flash the Vents">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Flash the Vents</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>LAW-205</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="LAW"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/180.png" alt="Inspired Recruit">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Inspired Recruit</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-180</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression Cunning"
+               data-set="LAW"
+               data-usage='{"3":0.0,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/085.png" alt="You Hold This">
+        </div>
+        <div class="card-body">
+          <div class="card-name">You Hold This</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>LAW-085</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Cunning Heroism"
+               data-set="LAW"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/078.png" alt="Sabine Wren">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Sabine Wren</div>
+          <div class="card-sub">
+            <span>Spectre Five</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-078</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Aggression"
+               data-set="LAW"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/057.png" alt="Benthic "Two Tubes"">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Benthic "Two Tubes"</div>
+          <div class="card-sub">
+            <span>The War Has Just Begun</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-057</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning Heroism"
+               data-set="JTL"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/198.png" alt="Fireball">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Fireball</div>
+          <div class="card-sub">
+            <span>An Explosion With Wings</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-198</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression"
+               data-set="JTL"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/158.png" alt="Crackshot V-Wing">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Crackshot V-Wing</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-158</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="JTL"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/151.png" alt="Red Five">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Red Five</div>
+          <div class="card-sub">
+            <span>Running the Trench</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-151</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="JTL"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/095.png" alt="Phoenix Squadron A-Wing">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Phoenix Squadron A-Wing</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-095</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Cunning"
+               data-set="IBH"
+               data-usage='{"3":0.0,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/21.png" alt="Improvised Detonation">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Improvised Detonation</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>IBH-021</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="nan"
+               data-set="HMW"
+               data-usage='{"3":2.5,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/272.png" alt="Growth">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Growth</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>HMW-272</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Cunning"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":2.5,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/238.png" alt="Exploit Confidence">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Exploit Confidence</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>HMW-238</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":5.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/223.png" alt="Therm Scissorpunch">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Therm Scissorpunch</div>
+          <div class="card-sub">
+            <span>Boastful Gambler</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-223</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning Heroism"
+               data-set="HMW"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/213.png" alt="Tribubble Bongo Sub">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Tribubble Bongo Sub</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-213</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="HMW"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/124.png" alt="Luminara Unduli">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Luminara Unduli</div>
+          <div class="card-sub">
+            <span>Beseiged General</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-124</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="HMW"
+               data-usage='{"3":2.5,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/121.png" alt="Hijacked AT-ST">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Hijacked AT-ST</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-121</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Base"
+               data-aspect="Command"
+               data-set="nan"
+               data-usage='{"3":0.0,"2":0.0,"1":5.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/022.png" alt="Command Splash Base">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Command Splash Base</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Base</span>
+            <span>Com27S</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Cunning"
+               data-set="ASH"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/229.png" alt="Camtono">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Camtono</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>ASH-229</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning Heroism"
+               data-set="ASH"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/207.png" alt="Heroic Purrgil">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Heroic Purrgil</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-207</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression"
+               data-set="ASH"
+               data-usage='{"3":2.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/168.png" alt="Migs Mayfeld">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Migs Mayfeld</div>
+          <div class="card-sub">
+            <span>How About a Toast?</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-168</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="ASH"
+               data-usage='{"3":2.5,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/117.png" alt="Outland Protector">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Outland Protector</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-117</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Command Heroism"
+               data-set="ASH"
+               data-usage='{"3":2.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/115.png" alt="The Student Guides the Master">
+        </div>
+        <div class="card-body">
+          <div class="card-name">The Student Guides the Master</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>ASH-115</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="ASH"
+               data-usage='{"3":2.5,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/108.png" alt="Crix Madine">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Crix Madine</div>
+          <div class="card-sub">
+            <span>Strike Team Strategist</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-108</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="ASH"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/106.png" alt="Pathfinder Sergeant">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Pathfinder Sergeant</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-106</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Cunning"
+               data-set="ASH"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/041.png" alt="Outcast">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Outcast</div>
+          <div class="card-sub">
+            <span>Mercenary Starship</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-041</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Cunning Heroism"
+               data-set="ASH"
+               data-usage='{"3":5.0,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/040.png" alt="Poe Dameron">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Poe Dameron</div>
+          <div class="card-sub">
+            <span>I'll Come Back For You</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-040</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="TWI"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/TWI/174.png" alt="Open Fire">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Open Fire</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>TWI-174</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="SOR"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SOR/172.png" alt="Open Fire">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Open Fire</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>SOR-172</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="SOR"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SOR/108.png" alt="Vanguard Infantry">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Vanguard Infantry</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SOR-108</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="SOR"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SOR/101.png" alt="Rogue Squadron Skirmisher">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Rogue Squadron Skirmisher</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SOR-101</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="SOR"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SOR/097.png" alt="Admiral Ackbar">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Admiral Ackbar</div>
+          <div class="card-sub">
+            <span>Brilliant Strategist</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SOR-097</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression Heroism"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/157.png" alt="One Way Out">
+        </div>
+        <div class="card-body">
+          <div class="card-name">One Way Out</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>SEC-157</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Command"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/130.png" alt="Ferrix Uprising">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Ferrix Uprising</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>SEC-130</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="SEC"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/119.png" alt="Crucible">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Crucible</div>
+          <div class="card-sub">
+            <span>Centuries of Wisdom</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-119</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="SEC"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/114.png" alt="Kino Loy">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Kino Loy</div>
+          <div class="card-sub">
+            <span>You Answer to Me</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-114</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/110.png" alt="GNK Power Droid">
+        </div>
+        <div class="card-body">
+          <div class="card-name">GNK Power Droid</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-110</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/103.png" alt="Mon Mothma">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Mon Mothma</div>
+          <div class="card-sub">
+            <span>Clinging to Hope</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-103</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="SEC"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/099.png" alt="Naboo Royal Starship">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Naboo Royal Starship</div>
+          <div class="card-sub">
+            <span>Fit For A Queen</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-099</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="SEC"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/SEC/096.png" alt="Ahsoka Tano">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Ahsoka Tano</div>
+          <div class="card-sub">
+            <span>I Learned it From You</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>SEC-096</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect=""
+               data-set="LOF"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LOF/255.png" alt="Curious Flock">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Curious Flock</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LOF-255</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="LOF"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LOF/148.png" alt="Rey">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Rey</div>
+          <div class="card-sub">
+            <span>With Palpatine's Power</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LOF-148</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Command"
+               data-set="LOF"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LOF/128.png" alt="Protect the Pod">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Protect the Pod</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>LOF-128</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="LOF"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LOF/096.png" alt="Obi-Wan Kenobi">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Obi-Wan Kenobi</div>
+          <div class="card-sub">
+            <span>Protective Padawan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LOF-096</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="LAW"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/181.png" alt="Cloud-Rider Veteran">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Cloud-Rider Veteran</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-181</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="LAW"
+               data-usage='{"3":0.0,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/149.png" alt="Rey">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Rey</div>
+          <div class="card-sub">
+            <span>Skywalker</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-149</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="LAW"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/148.png" alt="Smuggler's YT-2400">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Smuggler's YT-2400</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-148</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Cunning Heroism"
+               data-set="LAW"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/079.png" alt="K-2S0">
+        </div>
+        <div class="card-body">
+          <div class="card-name">K-2S0</div>
+          <div class="card-sub">
+            <span>Locking the Vault</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-079</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Aggression"
+               data-set="LAW"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/059.png" alt="Highsinger">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Highsinger</div>
+          <div class="card-sub">
+            <span>Deadly Droid</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>LAW-059</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="JTL"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/176.png" alt="Shoot Down">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Shoot Down</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>JTL-176</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="JTL"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/JTL/112.png" alt="Eager Escort Fighter">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Eager Escort Fighter</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>JTL-112</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="IBH"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/IBH/14.png" alt="Bright Hope">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Bright Hope</div>
+          <div class="card-sub">
+            <span>Narrow Escape</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>IBH-014</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Cunning"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/221.png" alt="Teeka">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Teeka</div>
+          <div class="card-sub">
+            <span>You're in Luck</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-221</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Aggression"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/174.png" alt="Maul">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Maul</div>
+          <div class="card-sub">
+            <span>Only Revenge Remains</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-174</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Command Heroism"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/127.png" alt="Chewbacca's Bowcaster">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Chewbacca's Bowcaster</div>
+          <div class="card-sub">
+            <span>Handcrafted Tradition</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>HMW-127</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Heroism"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/125.png" alt="The Marauder">
+        </div>
+        <div class="card-body">
+          <div class="card-name">The Marauder</div>
+          <div class="card-sub">
+            <span>A New Home</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-125</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Cunning"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/049.png" alt="Greater Sarlacc">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Greater Sarlacc</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-049</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command Aggression Heroism"
+               data-set="HMW"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/HMW/044.png" alt="Ima-Gun Di">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Ima-Gun Di</div>
+          <div class="card-sub">
+            <span>Holding out for Resupply</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>HMW-044</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Base"
+               data-aspect="Cunning"
+               data-set="nan"
+               data-usage='{"3":0.0,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/LAW/028.png" alt="Cunning Splash Base">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Cunning Splash Base</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Base</span>
+            <span>Cun27S</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Heroism"
+               data-set="ASH"
+               data-usage='{"3":0.0,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/255.png" alt="Anakin Skywalker">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Anakin Skywalker</div>
+          <div class="card-sub">
+            <span>You Were Right About Me</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-255</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Aggression"
+               data-set="ASH"
+               data-usage='{"3":0.0,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/184.png" alt="Follow Me">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Follow Me</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>ASH-184</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Aggression"
+               data-set="ASH"
+               data-usage='{"3":0.0,"2":2.5,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/181.png" alt="Mark My Words">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Mark My Words</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>ASH-181</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression"
+               data-set="ASH"
+               data-usage='{"3":0.0,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/172.png" alt="Razor Crest">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Razor Crest</div>
+          <div class="card-sub">
+            <span>Outfitted Armament</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-172</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Aggression Heroism"
+               data-set="ASH"
+               data-usage='{"3":0.0,"2":0.0,"1":2.5}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/161.png" alt="Zeb Orrelios">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Zeb Orrelios</div>
+          <div class="card-sub">
+            <span>Fists Work Every Time</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-161</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Event"
+               data-aspect="Command"
+               data-set="ASH"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/138.png" alt="Turning the Tide">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Turning the Tide</div>
+          <div class="card-sub">
+            <span>nan</span>
+          </div>
+          <div class="card-sub">
+            <span>Event</span>
+            <span>ASH-138</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Unit"
+               data-aspect="Command"
+               data-set="ASH"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/118.png" alt="8D8">
+        </div>
+        <div class="card-body">
+          <div class="card-name">8D8</div>
+          <div class="card-sub">
+            <span>Daimyo's Majordomo</span>
+          </div>
+          <div class="card-sub">
+            <span>Unit</span>
+            <span>ASH-118</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+<article class="card-tile"
+               data-type="Upgrade"
+               data-aspect="Command Heroism"
+               data-set="ASH"
+               data-usage='{"3":2.5,"2":0.0,"1":0.0}'>
+        <div class="card-image-wrapper">
+          <img src="https://cdn.swu-db.com/images/cards/ASH/114.png" alt="Sabine's Lightsaber">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Sabine's Lightsaber</div>
+          <div class="card-sub">
+            <span>Not Alone</span>
+          </div>
+          <div class="card-sub">
+            <span>Upgrade</span>
+            <span>ASH-114</span>
+          </div>
+          <div class="usage-stats"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div id="cardZoomPopup"></div>
+
+</main>
+
+<footer>
+  SWU‑Rec – unofficial Star Wars: Unlimited reference. Card images and game content © their owners.<br>
+  Last Data Refresh: 2026-09-11 22:29:55
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* ============================================================
+     FILTER STATE
+     ============================================================ */
+  let activeTypes   = new Set(["all"]);
+  let activeAspects = new Set(["all"]);
+  let activeSet     = "all";
+
+  /* ============================================================
+     ELEMENTS
+     ============================================================ */
+  const typeButtons   = document.querySelectorAll('.type-btn');
+  const aspectButtons = document.querySelectorAll('.aspect-btn');
+  const setFilter     = document.getElementById('setFilter');
+  const cards         = document.querySelectorAll('.card-tile');
+
+  /* ============================================================
+     USAGE STATS
+     ============================================================ */
+  function renderUsageStats() {
+    cards.forEach(tile => {
+      const usageContainer = tile.querySelector('.usage-stats');
+      const usageData = JSON.parse(tile.dataset.usage || "{}");
+      usageContainer.innerHTML = "";
+
+      const rows = [
+        { copies: 3, label: "3 copies" },
+        { copies: 2, label: "2 copies" },
+        { copies: 1, label: "1 copy" }
+      ];
+
+      rows.forEach(row => {
+        const pct = usageData[row.copies];
+        if (!pct || pct <= 0) return;
+        const div = document.createElement('div');
+        div.className = "usage-row";
+        div.textContent = `${row.label}: ${pct}% of decks`;
+        usageContainer.appendChild(div);
+      });
+    });
+  }
+
+  /* ============================================================
+     UNIFIED FILTER ENGINE
+     ============================================================ */
+  function applyFilters() {
+    cards.forEach(card => {
+      const cardTypes   = (card.dataset.type   || "").split(" ");
+      const cardAspects = (card.dataset.aspect || "").split(" ");
+      const cardSet     = card.dataset.set || "all";
+
+      let visible = true;
+
+      // TYPE FILTER
+      if (!activeTypes.has("all")) {
+        const matchesType = cardTypes.some(t => activeTypes.has(t));
+        if (!matchesType) visible = false;
+      }
+
+      // ASPECT FILTER
+      if (!activeAspects.has("all")) {
+        const matchesAspect = cardAspects.some(a => activeAspects.has(a));
+        if (!matchesAspect) visible = false;
+      }
+
+      // SET FILTER
+      if (activeSet !== "all" && cardSet !== activeSet) {
+        visible = false;
+      }
+
+      card.style.display = visible ? "" : "none";
+    });
+  }
+
+  /* ============================================================
+     APPLY FILTERS FROM URL (NEW)
+     ============================================================ */
+  function applyFiltersFromURL() {
+    const params = new URLSearchParams(window.location.search);
+
+    /* SET */
+    const setParam = params.get("set");
+    if (setParam) {
+      activeSet = setParam;
+      if (setFilter) setFilter.value = setParam;
+    }
+
+    /* TYPES */
+    const typesParam = params.get("types");
+    if (typesParam) {
+      activeTypes = new Set(typesParam.split(","));
+      activeTypes.delete("all");
+
+      typeButtons.forEach(btn => {
+        const t = btn.dataset.type;
+        btn.classList.toggle("active", activeTypes.has(t));
+      });
+    }
+
+    /* ASPECTS */
+    const aspectsParam = params.get("aspects");
+    if (aspectsParam) {
+      activeAspects = new Set(aspectsParam.split(","));
+      activeAspects.delete("all");
+
+      aspectButtons.forEach(btn => {
+        const a = btn.dataset.aspect;
+        btn.classList.toggle("active", activeAspects.has(a));
+      });
+    }
+  }
+
+  /* ============================================================
+     TYPE FILTER BUTTONS
+     ============================================================ */
+  typeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const type = btn.dataset.type;
+
+      if (type === "all") {
+        activeTypes = new Set(["all"]);
+        typeButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+        return;
+      }
+
+      activeTypes.delete("all");
+      document.querySelector('.type-btn[data-type="all"]')?.classList.remove('active');
+
+      if (activeTypes.has(type)) {
+        activeTypes.delete(type);
+        btn.classList.remove('active');
+      } else {
+        activeTypes.add(type);
+        btn.classList.add('active');
+      }
+
+      if (activeTypes.size === 0) {
+        activeTypes.add("all");
+        document.querySelector('.type-btn[data-type="all"]')?.classList.add('active');
+      }
+
+      applyFilters();
+    });
+  });
+
+  /* ============================================================
+     ASPECT FILTER BUTTONS
+     ============================================================ */
+  aspectButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const aspect = btn.dataset.aspect;
+
+      if (aspect === "all") {
+        activeAspects = new Set(["all"]);
+        aspectButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+        return;
+      }
+
+      activeAspects.delete("all");
+      document.querySelector('.aspect-btn[data-aspect="all"]')?.classList.remove('active');
+
+      if (activeAspects.has(aspect)) {
+        activeAspects.delete(aspect);
+        btn.classList.remove('active');
+      } else {
+        activeAspects.add(aspect);
+        btn.classList.add('active');
+      }
+
+      if (activeAspects.size === 0) {
+        activeAspects.add("all");
+        document.querySelector('.aspect-btn[data-aspect="all"]')?.classList.add('active');
+      }
+
+      applyFilters();
+    });
+  });
+
+  /* ============================================================
+     SET FILTER
+     ============================================================ */
+  if (setFilter) {
+    setFilter.addEventListener('change', () => {
+      activeSet = setFilter.value;
+      applyFilters();
+    });
+  }
+
+  /* ============================================================
+     LEADER CARD FLIP
+     ============================================================ */
+  const leaderImg = document.getElementById("leaderCardImage");
+  const flipBtn   = document.getElementById("flipLeaderBtn");
+
+  if (leaderImg && flipBtn) {
+    let showingFront = true;
+
+    flipBtn.addEventListener("click", () => {
+      leaderImg.style.opacity = 0;
+
+      setTimeout(() => {
+        showingFront = !showingFront;
+        leaderImg.src = showingFront ? leaderImg.dataset.front : leaderImg.dataset.back;
+        leaderImg.style.opacity = 1;
+      }, 200);
+    });
+  }
+
+  /* ============================================================
+     HOVER ZOOM POPUP
+     ============================================================ */
+  const zoomPopup = document.getElementById("cardZoomPopup");
+
+  if (zoomPopup) {
+    document.querySelectorAll(".card-image-wrapper img").forEach(img => {
+      img.addEventListener("mouseenter", () => {
+        const zoomImg = document.createElement("img");
+        zoomImg.src = img.src;
+        zoomPopup.innerHTML = "";
+        zoomPopup.appendChild(zoomImg);
+
+        zoomPopup.style.width = img.clientWidth * 2.5 + "px";
+        zoomPopup.style.display = "block";
+      });
+
+      img.addEventListener("mousemove", (e) => {
+        const offset = 20;
+        zoomPopup.style.left = e.clientX + offset + "px";
+        zoomPopup.style.top  = e.clientY + offset - 2.5 * img.clientHeight / 2 + "px";
+      });
+
+      img.addEventListener("mouseleave", () => {
+        zoomPopup.style.display = "none";
+      });
+    });
+  }
+
+  /* ============================================================
+     SHARE LINK BUTTON (GUARDED)
+     ============================================================ */
+  const copyShareLinkBtn = document.getElementById("copyShareLinkBtn");
+  const copyToast        = document.getElementById("copyToast");
+
+  if (copyShareLinkBtn && copyToast) {
+    copyShareLinkBtn.addEventListener("click", () => {
+      const params = new URLSearchParams();
+
+      if (activeSet !== "all") params.set("set", activeSet);
+      if (!activeTypes.has("all"))   params.set("types",   [...activeTypes].join(","));
+      if (!activeAspects.has("all")) params.set("aspects", [...activeAspects].join(","));
+
+      const baseUrl  = window.location.origin + "/HMW/HMW_014.html";
+      const shareUrl = params.toString()
+        ? `${baseUrl}?${params.toString()}`
+        : baseUrl;
+
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        copyToast.classList.add("show");
+        setTimeout(() => copyToast.classList.remove("show"), 1500);
+      });
+    });
+  }
+
+  /* ============================================================
+     INITIALIZE (URL → STATE → FILTERS)
+     ============================================================ */
+  applyFiltersFromURL();  // NEW
+  renderUsageStats();
+  applyFilters();
+});
+</script>
+</body>
+</html>
